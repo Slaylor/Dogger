@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+:root {
+    --white: white;
+    --black: black;
+    --orange: orange;
+    --grey: #999999;
+    --grey-light: #f8f9fa;
+    --grey-dark: #4a4a4b;
+    --green: #a2c0be;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    margin: 0;
+}
+
+/**
+ * Menu de navigation
+ */
+#menu {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    padding: 20px 0 20px 0; 
+}
+
+.logo {
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--black);
+}
+
+.logo span {
+    color: var(--orange);
+}
+
+#menu nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 35px;
+}
+
+#menu nav ul li a {
+    text-decoration: none;
+    color: var(--grey);
+    transition: color 350ms;
+}
+
+#menu nav ul li a:hover {
+    color: var(--grey-dark);
+    transition: color 350ms;
+}
+
+
+/**
+ * Titre, slogan et image du chien
+ */
+header {
+    background-color: var(--grey-light);
+}
+
+header section {
+    display:flex;
+    justify-content: space-between; 
+    width: 60%;
+    margin: auto;
+    align-items: center;
+}
+
+/* Largeur de l'image contenue dans le header */
+.headerDog {
+    width: 35%;
+}
+
+.headerTitle h1 {
+    font-size: 4rem;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.headerTitle p {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: lighter;
+    color: var(--grey);
+}
+
+/**
+ * Partie "main" du site
+ */
+.welcome {
+    text-align: center;
+    width: 30%;
+    margin: 60px auto; 
+}
+
+.welcome h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.welcome p {
+    margin: 0;
+    font-weight: lighter;
+    color: var(--grey);
+}
+
+/**
+ * Cards
+ */
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+    text-align: right;
+    width: 60%;
+    margin: auto auto 60px auto;
+}
+
+/* Prend tous les enfants en position en position pair */
+.card:nth-child(even) {
+    text-align: left;
+}
+
+.card .card-content {
+    width: 50%;
+}
+
+.card .card-content h3 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: normal;
+}
+
+.card .card-content p {
+    margin: 15px 0 40px 0;
+    color: var(--grey);
+}
+
+.card .card-content a {
+    background-color: var(--green);
+    color: var(--white);
+    text-decoration: none;
+    padding: 12px 32px;
+    border-radius: 50px;
+    transition: background-color 500ms;
+}
+
+.card .card-content a:hover {
+    background-color: var(--black);
+    transition: background-color 500ms;
+}
+
+.card .picture {
+    width: 40%;
+    box-shadow: 10px 10px 0 var(--green);
+}
+
+
+/**
+ * Footer
+ */
+footer {
+    background-color: var(--grey-dark);
+    color: var(--white);
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 50px 0;
+}
